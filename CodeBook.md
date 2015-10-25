@@ -15,11 +15,11 @@ Files used:
 * 'test/X_test.txt': Test set.
 * 'test/y_test.txt': Test labels.
 * 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is form 1 to 30. 
-* `'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.` 
+
 ---
 * 'train/X_train.txt': Training set.
 * 'train/y_train.txt': Training labels.
-* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is form 1 to 30. 
 ---
 * 'features.txt': List of all features.
 ---
@@ -35,20 +35,26 @@ Files used:
 
 ####Cleaning of the data
 
-Description of what the cleaning script does: 
+Description of what the cleaning script does:   
+
 Part1/ Reads 'test/X_test.txt' to R,   
 	adds labels to columns from 'features.txt'   
 	and add two columns to the beginning of data frame   
 		a/ subject from "./test/subject_test.txt"  
 		b/ activity from "./test/y_test.txt"  
+
 Part2/ Reads 'train/X_train.txt' to R,   
 	adds labels to columns from 'features.txt'   
 	and add two columns to the beginning of data frame   
 		a/ subject from "./test/subject_train.txt"  
 		b/ activity from "./test/y_train.txt"  
+
 Part3/ Merges the data frames from Part1 & Part2 to create one dataset using rbind.  
+
 Part4/ Extracts only measurements on the mean and standard deviation for each measurement.  
+
 Part5/ Adds new column with descriptive activity name as stated 'activity_labels.txt'.	  	
+
 Part6/ Creates final_table, independent tidy data set with the average of each variable for each activity and each subject.  		
 		
 ###Description of the variables in the tiny_data.txt file
