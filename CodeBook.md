@@ -20,13 +20,11 @@ Files used:
 * 'train/X_train.txt': Training set.
 * 'train/y_train.txt': Training labels.
 * 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-
-
 ---
 * 'features.txt': List of all features.
 ---
 * 'activity_labels.txt': Links the class labels with their activity name.
----
+
 
 ###Creating the tidy datafile
 
