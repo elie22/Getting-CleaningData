@@ -14,14 +14,14 @@ Files used:
 ---
 * 'test/X_test.txt': Test set.
 * 'test/y_test.txt': Test labels.
-* 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is form 1 to 30. 
+* 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
 ---
 * 'train/X_train.txt': Training set.
 * 'train/y_train.txt': Training labels.
-* 'train/'
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is form 1 to 30. 
+
 ---
 * 'features.txt': List of all features.
 ---
